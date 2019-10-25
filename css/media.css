@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) {
+    .order-photosession__title {
+        font-size: 40px;
+    }
+    
+}
+@media screen and (max-width: 992px) {
+    .order-photosession {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .order-photosession__text {
+        max-width: 992px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .loader {
+        margin-top: 50px;
+    }
+    .order-photosession__phohto {
+        height: 558px;
+        right: 0px;
+    }
+    .abought {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    .abought-text {
+        margin-top: 10px;
+        margin-left: 0px;
+    }   
+    .title {
+        font-size: 35px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .order-photosession__phohto {
+        height: 700px;
+        right: 0px;
+    }
+    .order-photosession__video {
+        width: 350px;
+        height: 266px;
+        left: 0px;
+        bottom: 77px;
+    }
+}
