@@ -36,8 +36,42 @@
     .subtitle {
         font-size: 16px;
     }
+    #slide-1, #slide-2 {
+        width: 390px;
+        height: 368px;
+    }
+    .how-it-works {
+        margin-top: 30px;
+    }
+    .how-it-works__pic1 {
+        margin-left: -188px;
+    }
+    .how-it-works__text {
+        margin-left: 157px;
+    }
+    .how-it-works__title {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .how-it-works {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .how-it-works__text {
+        margin-left: 15px;
+    }
+    .how-it-works__pic2 {
+        top: -95px;
+    }
+    .how-it-works__text {
+        margin-top: 60px;
+    }
 }
 @media screen and (max-width: 576px) {
+    .title {
+        font-size: 26px;
+    }
     .order-photosession__phohto {
         height: 700px;
         right: 0px;
@@ -47,5 +81,8 @@
         height: 266px;
         left: 0px;
         bottom: 77px;
+    }
+    .how-it-works__pic2 {
+        right: -150px;
     }
 }
