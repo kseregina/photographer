@@ -63,6 +63,28 @@
         margin-top: 50px;
         margin-bottom: 30px;
     }
+    .reviews {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+    } 
+    .reviews__title {
+        max-width: 992px;
+        margin-top: 30px;
+    }
+    .reviews__name {
+        margin-top: 35px;
+    }
+    .reviews__nav {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .reviews__photo {
+        margin-left: 0;
+    }
+    .reviews__nav {
+        justify-content: flex-end;
+    }
 }
 @media screen and (max-width: 768px) {
     .how-it-works {
@@ -96,4 +118,29 @@
     .how-it-works__pic2 {
         right: -150px;
     }
+    .form {
+        margin-top: 20px;
+    }
+    .footer__logo {
+        margin-right: 18px;
+    }
+    .footer__list li{
+        width: 100%;
+        text-align: left;
+    }
+    .footer {
+        margin-top: 30px;
+    }
 }
+@media screen and (max-width: 375px) {
+    .form__btn {
+        font-size: 10px;
+        line-height: 24px;
+        width: 97px;
+    }
+    .divder {
+        margin: 15px 0;
+    }
+}
+
+
