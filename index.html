@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>С-ЭСТЕЙТ Тест Лебедева К.М.</title>
@@ -18,7 +19,8 @@
         <div class="container">
             <div class="header">
                 <div class="logo"><img src="image/logo.png" alt="лупа"></div>
-                <div class="text-center"><img src="image/search.png" class="search"></div>
+                <div class="text-center"><img src="image/search.png" class="search"><input type="text"
+                        class="search-input hide"></div>
                 <div class="menu text-right">
                     <spsn class="menu__span">Меню</spsn>
                 </div>
@@ -35,10 +37,20 @@
                             сколько они красивы.</p>
                         <div class="order-photosession__btn">
                             <a href="">
-                                <p class="order-photosession__text-style">Заказать фотосессию</p>
+                                <p class="order-photosession__text-style">
+                                    Заказать фотосессию</p>
                             </a>
                         </div>
-                        <div class="loader">Полоска</div>
+                        <div class="loader">
+                            <div class="slider-container">
+                                <div class="slider-track">
+                                    <div class="track-progress"></div>
+                                </div>
+                                <div class="thumb">
+                                    <div class="thumb-indicator"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="order-photosession__phohto">
                         <div class="order-photosession__video">
@@ -75,15 +87,17 @@
                         с ними</h3>
                 </div>
                 <div class="carousel-video box">
-                    <div class="carousel-content">
-                        <div id="slide-1">
-                            <div class="play-btn">
-                                <img src="image/orange-play.png" alt="треугольник">
+                    <div class="slider">
+                        <div class="carousel-content">
+                            <div id="slide-1">
+                                <div class="play-btn">
+                                    <img src="image/orange-play.png" alt="треугольник">
+                                </div>
                             </div>
-                        </div>
-                        <div id="slide-2" class="no-active-slide">
-                            <div class="play-btn">
-                                <img src="image/orange-play.png" alt="треугольник">
+                            <div id="slide-2" class="no-active-slide">
+                                <div class="play-btn">
+                                    <img src="image/orange-play.png" alt="треугольник">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -128,11 +142,11 @@
                     </div>
                     <div class="portfolio__nav">
                         <ul class="portfolio__nav-bar d-flex flex-wrap">
-                            <li>Все фотографии</li>
-                            <li>Портретная съемка</li>
-                            <li>История любви</li>
-                            <li>Репортаж</li>
-                            <li>Проекты</li>
+                            <li id="all">Все фотографии</li>
+                            <li id="portret">Портретная съемка</li>
+                            <li id="story">История любви</li>
+                            <li id="report">Репортаж</li>
+                            <li id="projects">Проекты</li>
                         </ul>
                     </div>
                 </div>
@@ -140,27 +154,27 @@
             <div class="container">
                 <div class="photo">
                     <div>
-                        <img src="image/photo1.png" class="photo__img">
+                        <img src="image/photo1.png" class="photo__img" alt="портрет" data-photo="портрет">
                     </div>
                     <div>
-                        <img src="image/photo2.png" class="photo__img">
+                        <img src="image/photo2.png" class="photo__img" alt="портрет" data-photo="портрет">
                     </div>
                     <div>
-                        <img src="image/photo3.png" class="photo__img">
+                        <img src="image/photo3.png" class="photo__img" alt="портрет" data-photo="портрет">
                     </div>
                     <div>
-                        <img src="image/photo4.png" class="photo__img">
+                        <img src="image/photo4.png" class="photo__img" alt="история" data-photo="история">
                     </div>
                     <div>
-                        <img src="image/photo5.png" class="photo__img">
+                        <img src="image/photo5.png" class="photo__img" alt="репортаж" data-photo="репортаж">
                     </div>
                     <div>
-                        <img src="image/photo6.png" class="photo__img">
+                        <img src="image/photo6.png" class="photo__img" alt="проекты" data-photo="проекты">
                     </div>
                 </div>
                 <div class="btn-wrapper">
                     <div class="btn-show-photo">
-                        <a href="#">
+                        <a>
                             <p>Посмотреть все работы</p>
                         </a>
                     </div>
@@ -219,6 +233,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
